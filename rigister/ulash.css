@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  padding: 30px;
+  background-image: url("./Rectangle 18.png"); /* Removed backslash */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.box1 {
+  background-image: url("./Mask Group.svg"); /* Removed backslash */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 5px;
+  width: 1180px;
+  height: 392px;
+  box-shadow: rgba(255, 0, 170, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box1 h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.siz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.siz input {
+  border: 1px solid #989898;
+  width: 375px;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.comment-input {
+  width: 64%;
+  margin-top: 10px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #989898;
+  border-radius: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+.send-button {
+  width: 169.49px;
+  height: 42.06px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(96.12deg, #d4145a -21.03%, #3d5bf5 103.56%);
+  border-radius: 10px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}

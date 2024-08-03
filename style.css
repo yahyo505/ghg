@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  padding: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 10px 0;
+}
+
+.header-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left .logo-1 {
+  width: 80px;
+}
+
+.header-left .logo-2 {
+  width: 90px;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-right a:hover {
+  color: gray;
+}
+
+/* Hero Styles  */
+
+.hero {
+  padding: 80px 0;
+}
+
+.hero-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left h1 {
+  max-width: 676px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.hero-left button {
+  background-image: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+  padding: 15px 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.7s ease-in-out;
+  font-weight: 700;
+}
+
+.hero-left button:hover {
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  background-image: linear-gradient(95.2deg, #2e3192 2.23%, #b90160 99.51%);
+}
+
+.eva-parnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: url("./для\ фона.png");
+  background-repeat: no-repeat;
+}
+
+.car {
+  border: 1px solid rgb(201, 201, 201);
+  width: 344px;
+}
+
+.it {
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.car img {
+  font-size: 20px;
+}
+
+.car h2 {
+  font-size: 30px;
+}
+.car p {
+  font-size: 10px;
+  width: 363px;
+}
+
+.ish-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  background: linear-gradient(
+    94.31deg,
+    rgba(212, 20, 90, 0.25) 0.96%,
+    rgba(46, 49, 146, 0.25) 104.83%
+  );
+  padding: 30px;
+}
+
+.food-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.center {
+  padding: 10px;
+}
+.right {
+  padding: 20px;
+}
+
+/* Breakpoints  */
+
+@media screen and (max-width: 992px) {
+  .header-right .hidden {
+    display: none;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .header-right .active {
+    display: block !important;
+  }
+
+  .hero-right img {
+    width: 386px;
+  }
+  .eva-parnt {
+    flex-direction: column;
+    background-repeat: no-repeat;
+  }
+  .ish-parent {
+    flex-direction: column;
+  }
+  .food-parent {
+    display: flex;
+    gap: 50px;
+  }
+
+  .hero-left h1 {
+    max-width: 441px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  .eva-parnt {
+    flex-direction: column;
+    background-repeat: no-repeat;
+  }
+  .ish-parent {
+    flex-direction: column;
+  }
+
+  .header-left .logo-1 {
+    width: 50px;
+  }
+  .food-parent {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-left .logo-2 {
+    width: 60px;
+  }
+
+  .hero {
+    padding: 120px 0;
+    background-image: url("./подложка\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-parent {
+    flex-direction: column;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-left button {
+    margin-top: 50px;
+  }
+}
